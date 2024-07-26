@@ -4,10 +4,51 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Recipe & Allergens</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Recipes">Recipes</a></li>
+            <li><a href="#About">About</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- BODY -->
+    <main>
+      <section>
+          <h1>Recipe App!</h1>
+          
+          
+      </section>
+
+        <div id="content"></div>
+        <button id="getRecipe">Get Recipe!</button>
+    </main>
+
+
+    <!-- JS CONTENT-->
+    <script>
+      document.getElementById('getRecipe').addEventListener('click', function() {
+          const htmlContent = `
+              <h2>Find Your Recipe</h2>
+
+          `;
+          document.getElementById('content').innerHTML = htmlContent;
+
+          // link page to 
+      });
+  </script>
+
+</header>
 </html>
