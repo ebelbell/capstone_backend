@@ -5,10 +5,9 @@ import dotenv from 'dotenv';
 import connectDB from './config/db.mjs';
 import cors from 'cors';
 import recipeRoute from './routes/recipeRoute.mjs'
-//import router from './routes/recipeRoute.mjs';
+import Recipe from './models/recipeSchema.mjs';
+import recipesAll from './utilities/data.mjs';
 
-//schemas
-//import Recipe from './models/recipeSchema.mjs';
 
 //configs
 dotenv.config();
