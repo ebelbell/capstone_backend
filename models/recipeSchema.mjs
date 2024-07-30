@@ -7,13 +7,13 @@ const recipeSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        default: ''
+        default: '',
     },
     // an array of 'ObjectId that includes reference to allergen schema. 
     allergens: [{
         name: {
             type: String,
-            required: true
+            required: true,
         }
     }],
 });
