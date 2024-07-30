@@ -4,8 +4,10 @@ const recipesAll = [
         recipeTitle: 'Peanut Butter Cookies',
         description: 'Delicious cookies made with peanut butter.',
         allergens: [{ 
-            name: 'Peanut', 
-            name: 'Dairy' 
+            name: 'Peanut' 
+        },
+        {
+            name: 'Dairy'
         }]
     },
     {
@@ -13,7 +15,6 @@ const recipesAll = [
         description: 'Breakfast',
         allergens: [{ 
             name: 'Dairy', 
-            name: 'Gluten-free' 
         }]    
     },
     {

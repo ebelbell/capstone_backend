@@ -26,6 +26,10 @@ app.use(cors());
 
 //Routes
 app.use('/recipe', recipeRoute)
+app.get('/seed', async (req, res) => {
+  await Recipe.create(recipesAll)
+  res.send('Seeded database');
+})
 
 //Error checking middleware
 app.use((err, _req, res, _next) => {
